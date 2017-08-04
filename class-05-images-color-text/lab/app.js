@@ -134,11 +134,12 @@ new branch for your work on the next question!
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-
+    var addedUp = sum( sum(testArray[0], testArray[1])[0], testArray[2])[0]
+    return [addedUp, testArray + ' was passed in as an array of numbers, and ' + addedUp + ' is their sum.']
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 
 /////////////////////////////////////
